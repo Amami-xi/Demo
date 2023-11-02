@@ -1,3 +1,4 @@
+test
 import { createApp } from 'vue'
 import App from './App.vue'
 // 引入路由配置
