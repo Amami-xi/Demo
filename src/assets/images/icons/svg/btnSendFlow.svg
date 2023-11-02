@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="发送" class="cls-1" d="M47,10H73V30H47V10Zm0,0,13,9v2L47,12V10Zm13,9,13-9v2L60,21V19Zm7,0h3v7H67V19Zm-2,2,4-2v2l-4,2V21Zm7,0-4-2v2l4,2V21Z" transform="translate(-40)"/>
+</svg>

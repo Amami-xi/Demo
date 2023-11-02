@@ -1,0 +1,71 @@
+.tlw-home {
+    $el-row-height: calc(100vh - var(--main-header-height) - var(--padding-height)*2);
+    $map-tab-height: 2.3125rem;
+
+    .el-row {
+        height: $el-row-height;
+
+        .el-col {
+            .mapCard {
+                border: .0625rem dashed #000000;
+            }
+
+            .el-card {
+                .el-card__body {
+
+                    .lxgmChart,
+                    .ysgmChart {
+                        height: calc(($el-row-height - var(--card-header-height) - var(--padding-height)*2 - var(--divider-height)*2 - .5rem) / 2);
+                    }
+
+                    .mapChart {
+                        height: calc($el-row-height - var(--padding-height)*2 - $map-tab-height - 2.5rem);
+                    }
+
+                    .lxxmChart,
+                    .ysxmChart {
+                        height: calc(($el-row-height - var(--card-header-height)*2 - var(--padding-height)*5 - .5rem) / 2);
+                    }
+
+                    .map-row {
+                        display: flex;
+                        justify-content: center;
+
+                        .map-tabs {
+                            border: .125rem solid $themeColor;
+                            border-radius: .125rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .map-tab {
+                                color: $themeColor;
+                                font-weight: bold;
+                                margin: .25rem .25rem;
+
+                                &.is-active {
+                                    background: $themeColor;
+                                    color: #FFFFFF;
+                                }
+
+                                .map-title {
+                                    padding: .25rem 1rem;
+                                    font-size: var(--logoTipFontSize);
+                                }
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .ysxmCard {
+                margin-top: 1.25rem;
+            }
+        }
+    }
+}

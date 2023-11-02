@@ -1,0 +1,66 @@
+/*--------------------------------------- 声明 开始 ---------------------------------------*/
+$fontFamily: '\5FAE\8F6F\96C5\9ED1', 'Microsoft Yahei', 'Hiragino Sans GB', tahoma, arial, '\5B8B\4F53';
+
+/*-- 默认背景/字体色 ----------------*/
+$themeColor: #4596DE; //系统主色调
+$themeColor-bg: #F5FAFF; //系统底色调
+$themeColor-header-main: linear-gradient(0deg, #4495DD, #64A1E8); //系统主页头部菜单栏背景色
+$themeColor-header-flow: linear-gradient(0deg, #F0F5FA 0%, #E8F3FC 100%); //系统流程主页头部步骤条背景色
+$themeBg-hover: linear-gradient(0deg, #0F63AE, #2C80CD); //系统菜单按钮鼠标悬浮背景色
+$themeColor-hover: #0F63AE;
+$themeColor-table: #E5F2FF; //系统表格色调
+$color: #202F44;
+
+$divider-color: #BACDDE;
+$headerTips-bg: linear-gradient(0deg, #0F63AE, #2C80CD); //头部提示背景色
+$headerTips-color: #FFFF00; //头部提示字体色
+$tabsActive-color: #F49244;
+
+$tableFontColor: #555; //表格字体颜色
+$img-path: '../images/guide/';
+$icons-path: '../images/icons.png';
+
+$barColor: #F7E8CC; //导航条颜色
+
+
+/*--------------------------------------- 声明 结束 ---------------------------------------*/
+
+/*--------------------------------------- 声明（屏幕分辨率自适应） 开始 ---------------------*/
+:root {
+    /*-- 主页默认高度main -----------*/
+    --main-header-height: 6.875rem; //头部高度
+    --main-header-top-height: 4.375rem; //头部大标题高度
+    --main-header-menu-height: 2.5rem; //头部菜单栏高度
+
+    /*-- 流程主页默认高度flow --------*/
+    --flow-header-height: 8.125rem;
+    --flow-header-top-height: 4.375rem;
+    --flow-header-menu-height: 3.75rem;
+
+    /*-- element-plus 元素高度 --------*/
+    --padding-height: 1.25rem; //页面元素间默认外边距、内边距
+    --tab-header-height:2.5rem; //tabs头部高度
+    --card-header-height: 2.5rem; //card头部高度
+    --dialog-header-height: 2.5rem; //dialog高度
+    --table-td-height: 2rem; //单元格高度
+    --divider-height: .625rem; // 间隔线边距
+
+    /*-- 默认字体 ----------------*/
+    --fontSize: .9375rem; // 系统默认字体
+    --menuFontSize: 1rem; //一级菜单字体
+    --menuSmallFontSize: .9375rem; //下级菜单字体
+    --guideLogoFontSize: 2rem; //引导页头部大标题
+    --guideLogoEnFontSize: .875rem; //引导页头部大标题英文
+    --guideFontSize: 1.25rem; //引导页字体
+    --guideEnFontSize: .625rem; //引导页字体英文
+    --guideUserFontSize: 1rem; //引导页用户字体
+    --logoFontSize: 1.625rem; //系统头部logo标题
+    --logoEnFontSize: .75rem; //系统头部logo标题英文
+    --logoSmFontSize: 1.25rem; //系统头部logo小标题
+    --logoTipFontSize: 1rem; //系统头部logo提示字体
+    --cardHeaderFontSize: 1rem; //卡片头部字体
+    --tableFontsize: .9375rem; //表格字体大小
+
+}
+
+/*--------------------------------------- 声明（屏幕分辨率自适应） 结束 ---------------------*/

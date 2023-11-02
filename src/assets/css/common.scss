@@ -1,0 +1,85 @@
+@import './elementplus.scss';
+@import './mian.scss';
+@import './ly-main.scss';
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfix:after {
+    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
+
+//图标默认颜色
+svg {
+    use {
+        fill: $themeColor;
+    }
+}
+
+//echarts标题
+.chartTitle {
+    font-size: var(--fontSize);
+    margin-bottom: 1.25rem;
+}
+
+//去掉下边框
+.border-none {
+    border-bottom: none !important;
+}
+
+//鼠标箭头变小手
+.tlw-pointer {
+    cursor: pointer;
+}
+
+//成功图标
+.icon-success {
+    color: var(--el-color-success);
+}
+
+//返回
+.tlw-back {
+    position: absolute;
+    right: 1.25rem;
+    background: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+}
+
+//水印字体
+.tlw-shuiy {
+    color: red;
+    opacity: 0.3;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(8deg);
+}
+
+.plotMjSvg {
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}

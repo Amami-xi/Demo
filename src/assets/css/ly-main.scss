@@ -1,0 +1,75 @@
+.tlw-lysp-form {
+    .tlw-table {
+        margin-top: .625rem;
+        table-layout: fixed;
+
+        .td-left {
+            margin-left: .625rem;
+        }
+
+        .el-row {
+            margin-top: .625rem;
+
+            .el-col {
+                .el-form-item {
+                    margin-right: .125rem;
+                }
+            }
+        }
+
+    }
+
+    /*---------------默认不显示错误信息-----------------*/
+    .el-form-item__error {
+        display: none !important;
+    }
+
+    /*---------------显示错误信息-----------------*/
+    .el-form-item__error_show {
+        .el-form-item__error {
+            display: block !important;
+        }
+    }
+
+    /*----------------湿地占用征收审批-----------------*/
+    .lysp-sd-form {
+        .el-select {
+            width: 100%;
+        }
+    }
+
+    /*----------------林木采伐许可审批-----------------*/
+    .lysp-cf-form {
+        .el-input {
+            width: 12.5rem;
+        }
+    }
+
+    /*----------------生态公益林调整审批-----------------*/
+    .lysp-gyl-form {
+
+        .drxb,
+        .dcxb {
+            padding: .625rem .625rem;
+
+            .el-input {
+                width: 11rem;
+            }
+
+            div {
+                margin-top: .125rem;
+                margin-left: .0625rem;
+                margin-right: .0625rem;
+            }
+        }
+
+        .dcxb {
+            position: relative;
+
+            .el-row {
+                position: absolute;
+                top: .625rem;
+            }
+        }
+    }
+}

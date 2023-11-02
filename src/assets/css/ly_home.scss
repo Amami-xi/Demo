@@ -1,0 +1,42 @@
+.tlw-home {
+    $el-row-height: calc((100vh - var(--main-header-height) - var(--padding-height)*3)/2);
+    .el-row {
+        height:  $el-row-height;
+
+        .el-col {
+            .el-tabs__header {
+                margin-top: -1.25rem;
+            }
+
+            .el-card {
+                .el-card__header {
+                    svg {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+                .el-card__body {
+
+                    .xmsyld,
+                    .sdzyzs,
+                    .rgfy,
+                    .jyly,
+                    .ysdw,
+                    .gyl {
+                        height: calc($el-row-height - var(--card-header-height) * 2 - var(--padding-height)*2 - .25rem);
+                    }
+
+                    .cf {
+                        height: calc($el-row-height - var(--card-header-height) - var(--padding-height)*2 - 5px - 3rem - 1.875rem);
+                        margin-top: .625rem;
+                    }
+
+                    .tlw-select-cf {
+                        margin-top: .625rem;
+                    }
+                }
+
+            }
+        }
+    }
+}

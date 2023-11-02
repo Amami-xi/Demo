@@ -1,0 +1,868 @@
+/*--------------------------------------- element-plus样式 开始 ---------------------------------------*/
+
+/*--------------------------------------- el-containter布局 ---------------------------------------*/
+.el-header {
+  padding: 0;
+}
+
+.el-aside {
+  background: $themeColor-bg;
+  box-shadow: 0 .1875rem .375rem 0 rgba(137, 137, 137, 0.6);
+}
+
+/*--------------------------------------- el-row -----------------------------------------------*/
+//el-row 加下边距
+.tlw-row {
+  margin-top: 1.25rem;
+
+  &:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.tlw-gird {
+  .el-col {
+    padding: 0 .625rem;
+
+    .el-card {
+      height: 220px;
+      margin-bottom: 1.25rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+//根据el-row 自定义table【审批意见】
+.tlw-row-table {
+  border-left: .0625rem solid $themeColor;
+  border-top: .0625rem solid $themeColor;
+  background-color: #fff;
+  margin-top: 1.25rem;
+
+  .el-col {
+    display: flex;
+    border-right: .0625rem solid $themeColor;
+    border-bottom: .0625rem solid $themeColor;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: .625rem;
+    font-size: var(--tableFontsize);
+
+    &:nth-child(odd) {
+      background: $themeColor-table;
+    }
+
+    input {
+      text-align: center;
+      background: $themeColor-table;
+      border: .0625rem solid $themeColor;
+    }
+
+    textarea {
+      border: .0625rem solid $themeColor;
+    }
+
+    .is-disabled {
+      .el-textarea__inner {
+        background: $themeColor-table;
+        color: #000;
+        cursor: default;
+      }
+    }
+  }
+
+  .col-title {
+    background: $themeColor-table;
+  }
+}
+
+/*--------------------------------------- .el-tag ---------------------------------------------------*/
+.tlw-tag {
+  position: absolute;
+  right: 2.5rem;
+}
+
+.tlw-point {
+  border-radius: 50% !important;
+  width: 15px !important;
+  height: 15px !important;
+  padding: 0px !important;
+}
+
+/*--------------------------------------- .el-divider ---------------------------------------------------*/
+.el-divider {
+  margin: .625rem auto;
+}
+
+/*--------------------------------------- el-dialog---------------------------------------------------*/
+.el-dialog {
+  .el-dialog__header {
+    display: flex;
+    align-items: center;
+    background: $themeColor;
+    margin-right: 0;
+    height: var(--dialog-header-height);
+    padding: 0;
+    padding: 0 .625rem;
+
+    .el-dialog__title {
+      font-size: 1rem;
+    }
+  }
+
+  .el-dialog__headerbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--dialog-header-height);
+    top: 0;
+
+    svg {
+      color: #FFFFFF;
+    }
+
+    &:hover {
+      background: red;
+    }
+  }
+}
+
+.tlw-dialog {
+  .el-dialog__header {
+    font-size: 1rem;
+
+    .tlw-fullscreen {
+      position: absolute;
+      right: 1.875rem;
+      margin-right: 1.875rem;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  .el-dialog__body {
+    height: 550px !important;
+  }
+}
+
+.tlw-dialog-dk {
+  .el-dialog__header {
+    font-size: 1rem;
+
+    .tlw-fullscreen {
+      position: absolute;
+      right: 1.875rem;
+      margin-right: 1.875rem;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+
+.tlw-preview-dialog {
+  .el-dialog__body {
+    padding: 1.25rem;
+    height: calc(100vh - var(--dialog-header-height) - 2.5rem);
+
+    .tlw-preview {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .el-dialog__footer {
+    padding: 0;
+  }
+}
+
+.tlw-Image-dialog {
+  .el-dialog__body {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*--------------------------------------- el-scrollbar -----------------------------------------------*/
+.tlw-scrollbar {
+  height: calc(100vh - 100px);
+}
+
+/*--------------------------------------- el-menu -----------------------------------------------*/
+.el-menu {
+  .el-menu-item {
+    height: var(--main-header-menu-height);
+
+    &.is-active {
+      use {
+        fill: #FFFFFF;
+      }
+    }
+
+    &:hover {
+      use {
+        fill: #FFFFFF;
+      }
+    }
+
+  }
+}
+
+/*--------------------------------------- el-form -----------------------------------------------*/
+
+/*----------------表单查询-----------------*/
+.tlw-search {
+  background: $themeColor-bg;
+  margin-top: 1.25rem;
+  padding: .625rem .625rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .el-row {
+    margin-top: .625rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .el-form-item {
+      margin-bottom: 0;
+
+      .el-form-item__label {
+        font-size: var(--fontSize);
+      }
+
+      .el-form-item__content {
+        .el-input--suffix {
+          width: 13.375rem;
+        }
+      }
+    }
+
+    .el-button {
+      background: $themeColor;
+      border-color: $themeColor;
+    }
+
+  }
+
+}
+
+.tlw-search-more {
+  .el-form-item {
+    margin-bottom: .625rem !important;
+  }
+
+  padding-bottom: 0;
+}
+
+/*----------------表单-----------------*/
+.tlw-form {
+  margin-top: 1.25rem;
+}
+
+//复选框
+.el-checkbox-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*----------------进入样式-----------------*/
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+  &::after {
+    border-color: var(--el-checkbox-checked-icon-color);
+  }
+
+  background-color: var(--el-checkbox-checked-bg-color);
+  border-color: var(--el-checkbox-checked-input-border-color);
+}
+
+/*----------------输入框必填-----------------*/
+.requireCol:before {
+  content: '*';
+  color: red;
+  margin-right: .125rem;
+}
+
+/*----------------表单字体调整-----------------*/
+.el-form-item {
+  label {
+    font-size: var(--fontSize);
+  }
+}
+
+/*--------------------------------------- el-dropdown-------------------------------------------*/
+
+.el-dropdown {
+  margin: 0 .625rem;
+}
+
+/*--------------------------------------- el-tabs-----------------------------------------------*/
+.el-tabs {
+  .el-tabs__header {
+    margin: 0;
+
+    .el-tabs__nav-wrap {
+      &::after {
+        background: #E4E7ED;
+      }
+
+      .el-tabs__nav-scroll {
+        .el-tabs__nav {
+          .el-tabs__active-bar {
+            background: $themeColor;
+          }
+
+          .el-tabs__item {
+            height: var(--tab-header-height);
+            line-height: var(--tab-header-height);
+            color: $themeColor;
+            font-size: .875rem;
+
+            &.is-active {
+              color: #F49244;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tlw-tabs {
+  .el-tabs__header {
+    .el-tabs__nav-wrap {
+      &::after {
+        background: $themeColor;
+      }
+
+      .el-tabs__nav-scroll {
+        .el-tabs__nav {
+          width: 100%;
+          display: flex;
+
+          .el-tabs__active-bar {
+            background: none;
+          }
+
+          .el-tabs__item {
+            flex: 1 1 0;
+            color: $themeColor;
+            text-align: center;
+            background: $themeColor-table;
+
+            &.is-active {
+              background: $themeColor;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*--------------------------------------- el-card-----------------------------------------------*/
+.el-card {
+  .el-card__header {
+    height: var(--card-header-height);
+    padding: var(--padding-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    background: $themeColor;
+    font-size: 1rem;
+  }
+}
+
+.tlw-cardPanel {
+  svg {
+    width: 13.4375rem;
+    height: 2rem;
+  }
+}
+
+.tlw-card {
+  width: 90%;
+  margin: 0 auto;
+
+  .el-card__header {
+    color: #000000;
+    font-weight: bold;
+    justify-content: center;
+    background: $themeColor-table;
+  }
+}
+
+.tlw-card-block {
+  margin-top: 1.25rem;
+
+  &:first-child {
+    margin-top: 0px;
+  }
+
+  .el-card__header {
+    background: #FFFFFF;
+    color: #000000;
+  }
+}
+
+
+/*--------------------------------------- el-table -----------------------------------------------*/
+.el-table {
+
+  // 表格大文本居左
+  // .el-tooltip {
+  //   text-align: left;
+  // }
+
+  //表格左右外边框
+  &::before,
+  &::after {
+    background: $themeColor;
+  }
+
+  .el-table__inner-wrapper {
+
+    &::before {
+      background: $themeColor;
+    }
+
+    &::before,
+    &::after {
+      background: $themeColor;
+    }
+
+    //表格头部区
+    .el-table__header-wrapper {
+      .el-table__header {
+        th {
+          text-align: center;
+          height: var(--table-td-height);
+          padding: 0;
+          font-size: var(--tableFontsize);
+          color: $tableFontColor;
+          background: $themeColor-table;
+          font-weight: normal;
+          border-color: $themeColor;
+        }
+      }
+    }
+
+    //表格内容区
+    .el-table__body-wrapper {
+
+      //有数据区
+      .el-table__body {
+        .el-table__row--striped {
+          td {
+            background: $themeColor-table;
+          }
+        }
+
+        td {
+          text-align: center;
+          height: var(--table-td-height);
+          padding: 0;
+          font-size: var(--tableFontsize);
+          color: $tableFontColor;
+          border-color: $themeColor;
+        }
+
+        .el-table__expanded-cell {
+          border-bottom: 0;
+        }
+      }
+
+      //无数据区
+      .el-table__empty-block {
+        border-bottom: .0625rem solid $themeColor;
+      }
+    }
+
+    //表格合计
+    .el-table__footer-wrapper {
+      .el-table__footer {
+        td {
+          border-top: 1px solid $themeColor;
+          border-bottom: 1px solid $themeColor !important;
+        }
+      }
+    }
+
+    //表格左边框
+    .el-table__border-left-patch {
+      background: $themeColor;
+    }
+  }
+
+  //表格合计
+  .el-table__footer-wrapper {
+    .el-table__footer {
+      td {
+        text-align: center;
+        height: var(--table-td-height);
+        padding: 0;
+        font-size: var(--tableFontsize);
+        color: $tableFontColor;
+        border-color: $themeColor;
+        background: $themeColor-table;
+      }
+    }
+  }
+}
+
+.attach-table {
+  td {
+    padding: .125rem !important;
+  }
+}
+
+//清除鼠标悬浮行样式
+.tlw-clear-rowstyle {
+  tbody tr {
+    &:hover {
+      td {
+        background: none !important;
+      }
+    }
+  }
+}
+
+/*--------------------------------------- 自定义table ------------------------------------------*/
+.tlw-table-title {
+  display: block;
+  border-left: .1875rem solid $themeColor-hover;
+  height: 1.0625rem;
+  line-height: 1.0625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  // margin-bottom: .75rem;
+  padding-left: .625rem;
+  text-align: left;
+}
+
+.tlw-table {
+  width: 100%;
+  margin: 1.25rem auto;
+  border-collapse: collapse;
+  border-left: .0625rem solid $themeColor;
+  border-top: .0625rem solid $themeColor;
+  border-radius: .375rem;
+
+  tr {
+    th {
+      background: $themeColor-table;
+    }
+
+    //单元格内容默认居中
+    th,
+    td {
+      text-align: center;
+      border-right: .0625rem solid $themeColor;
+      border-bottom: .0625rem solid $themeColor;
+      padding: 1.25rem .625rem;
+
+      .el-form-item {
+        margin-bottom: 0 !important;
+      }
+
+      .el-row {
+        .el-col {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        .col-right {
+          justify-content: flex-end;
+
+          .el-form-item {
+            margin-left: .625rem;
+          }
+
+          .el-input {
+            width: 13.75rem;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/*--------------------------------------- el-pagination-----------------------------------------------*/
+.el-pagination {
+  margin-top: 1.25rem;
+  justify-content: flex-end;
+
+  input {
+    border-color: $themeColor;
+  }
+
+  input,
+  span,
+  li {
+    font-size: .75rem;
+  }
+}
+
+/*--------------------------------------- el-icon-----------------------------------------------*/
+.tlw-icon-view {
+  &:hover {
+    cursor: pointer;
+    color: green;
+  }
+}
+
+
+.tlw-icon-close {
+  &:hover {
+    cursor: pointer;
+    color: red;
+  }
+}
+
+
+.tlw-icon-success {
+  color: var(--el-color-success);
+}
+
+/*--------------------------------------- el-upload-----------------------------------------------*/
+.el-upload {
+  display: flex;
+  justify-content: space-around;
+
+  .uploadBtnText {
+    width: 60%;
+    white-space: pre-wrap;
+  }
+
+  .el-upload-list__item.is-success:focus:not(:hover) {
+    display: none !important;
+  }
+
+  .el-icon--close-tip {
+    display: none !important;
+  }
+
+  .el-upload-list__item.is-success.focusing .el-icon-close-tip {
+    display: none !important;
+  }
+}
+
+//多附件上传
+.tlw-more-attach-upload {
+
+  .is-disabled {
+
+    .el-upload {
+      display: none;
+    }
+  }
+
+  .el-upload {
+    justify-content: flex-start;
+  }
+
+  .el-upload-list--text {
+    display: none !important;
+  }
+
+  .tlw-upload-list {
+    margin-top: 1.25rem;
+    padding: .25rem .3125rem;
+    background-color: var(--el-fill-color-light);
+    border-radius: .25rem;
+
+    .tlw-icon-close {
+      display: none;
+    }
+
+    &:hover {
+      background-color: #ecf5ff;
+
+      .tlw-icon-close {
+        display: flex;
+      }
+
+      .tlw-icon-success {
+        display: none !important;
+      }
+    }
+
+    .el-col {
+      display: flex;
+      align-items: center;
+    }
+
+    .tlw-upload-list__item-view {
+      justify-content: center;
+    }
+
+    .tlw-upload-list__item-close {
+      justify-content: flex-end;
+    }
+
+    .tlw-upload-list__item-name {
+
+      span {
+        white-space: nowrap; //先强制文本一行内显示
+        overflow: hidden; //超出部分影藏
+        text-overflow: ellipsis; //用省略号代替超出的部分
+
+        &:hover {
+          cursor: pointer;
+          color: var(--el-color-primary);
+        }
+      }
+    }
+  }
+}
+
+//多照片上传
+.tlw-more-image-upload {
+  .is-disabled {
+
+    //隐藏上传按钮
+    .el-upload--picture-card {
+      display: none;
+    }
+
+    //隐藏删除按钮
+    .el-upload-list__item-delete {
+      display: none !important;
+    }
+
+  }
+}
+
+//照片详情
+.zpDetail {
+  .el-card__header {
+    background: #ecf5ff !important;
+    padding-left: .625rem !important;
+  }
+
+  .el-card__body {
+    height: calc(100vh - 17.5rem);
+
+    .el-carousel {
+      width: 100%;
+      height: 100%;
+
+      .el-carousel__container {
+        height: 95%;
+
+        .el-carousel__item {
+          height: calc(100vh - 17.5rem);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .el-image {
+            // height: 90%;
+            // width: 95%;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+/*--------------------------------------- el-space-----------------------------------------------*/
+
+
+// 表单样式
+// 选择框弹出栏样式
+.el-popper {
+  .el-select-dropdown__list {
+    .el-select-dropdown__item {
+      color: #555;
+      margin-bottom: .0625rem;
+
+      &.selected {
+        color: $themeColor;
+        background: #E5F2FF;
+        font-weight: normal;
+      }
+
+      &.hover {
+        color: $themeColor;
+        background: #E5F2FF;
+      }
+
+      &:hover {
+        color: $themeColor;
+        background: #E5F2FF;
+      }
+    }
+  }
+
+  // 分组
+  .el-select-group__wrap {
+    padding-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+
+    .el-select-group__title {
+      color: #333;
+      font-weight: bold;
+    }
+
+    .el-select-group {
+      .el-select-dropdown__item {
+        color: #555;
+        padding: 0 1.875rem;
+        margin-bottom: .0625rem;
+
+        &.selected {
+          color: $themeColor;
+          background: #E5F2FF;
+          font-weight: normal;
+        }
+
+        &:hover {
+          color: $themeColor;
+          background: #E5F2FF;
+        }
+      }
+    }
+  }
+}
+
+//输入框禁用颜色
+.el-input.is-disabled .el-input__inner,
+.el-textarea.is-disabled .el-textarea__inner {
+  // color: #000;
+  cursor: default;
+}
+
+//嵌套扩展箭头显示隐藏
+.row-expand-show .el-table__expand-icon {
+  visibility: inherit;
+}
+
+.row-expand-hidden .el-table__expand-icon {
+  visibility: hidden;
+}
+
+/*--------------------------------------- element-plus样式 结束 ---------------------------------------*/

@@ -1,0 +1,546 @@
+.tlw-container {
+    width: calc(100vw);
+    height: calc(100vh);
+    background: rgba(255, 255, 255, 0.5);
+    font-family: Microsoft YaHei;
+
+    /*--------------------------------主页el-header区域--------------------------------------*/
+    .tlw-header {
+        height: var(--main-header-height);
+        background: $themeColor;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        .tlw-header-top {
+            height: var(--main-header-top-height);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 1.25rem;
+
+            .tlw-header-logo {
+                color: #FFFFFF;
+                padding-left: 1.875rem;
+
+                .logo-cn {
+                    font-size: var(--logoFontSize);
+
+                    span {
+                        margin-left: .625rem;
+                        padding-left: .625rem;
+                        font-size: var(--logoSmFontSize);
+                        border-left: .0625rem solid rgba(255, 255, 255, 0.5);
+                    }
+                }
+
+                .logo-en {
+                    margin-top: .375rem;
+                    font-size: .75rem;
+                }
+
+            }
+
+            .tlw-header-tips {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: var(--logoTipFontSize);
+                margin-left: 10%;
+                padding: .4375rem 1.375rem;
+                color: $headerTips-color;
+                background: $headerTips-bg;
+                box-shadow: 0 .0625rem .1875rem 0 rgba(0, 0, 0, 0.2)
+            }
+
+            .el-space {
+                color: #FFFFFF;
+                font-size: var(--font-size);
+
+                span {
+                    padding-bottom: .125rem !important;
+                }
+
+                .el-space__item {
+                    .headImage {
+
+                        //图标大小
+                        svg {
+                            width: 1.25rem;
+                            height: 1.25rem;
+
+
+                            use {
+                                fill: #FFFFFF;
+                            }
+                        }
+
+                        .icon-title {
+                            margin-left: .4375rem;
+                        }
+                    }
+
+
+                    .headSet {
+                        display: flex;
+
+                        .editPass {
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+
+                        .signOut {
+                            display: flex;
+                            margin-left: .625rem;
+                            margin-top: .125rem;
+
+                            .tlw-svgIcon {
+                                svg {
+                                    width: var(--font-size);
+                                    height: var(--font-size);
+
+                                    use {
+                                        fill: #FFFFFF;
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .tlw-header-menu {
+            border: none;
+            background: $themeColor-header-main;
+            justify-content: center;
+
+            .el-menu-item {
+                height: 2.5rem;
+                color: #FFFFFF;
+                border-left: .0625rem solid rgba(255, 255, 255, 0.5);
+                width: 13%;
+
+                &:last-child {
+                    border-right: .0625rem solid rgba(255, 255, 255, 0.5);
+                }
+
+                &.is-active {
+                    border-bottom: none;
+                    color: #FFFFFF !important;
+                    background: $themeBg-hover;
+                    box-shadow: 0 .0625rem .1875rem 0 rgba(0, 0, 0, 0.25) !important;
+
+                }
+
+                &:hover {
+                    border-bottom: none;
+                    background: $themeBg-hover;
+                    box-shadow: 0 .0625rem .1875rem 0 rgba(0, 0, 0, 0.25) !important;
+
+                }
+
+                .tlw-svgIcon {
+
+                    //图标大小
+                    svg {
+                        width: 1.125rem;
+                        height: 1.1875rem;
+                    }
+
+                    //字体大小
+                    .icon-title {
+                        height: 2.5rem;
+                        font-size: var(--menuFontSize);
+                        line-height: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /*--------------------------------流程办理页面el-header区域-------------------------------------*/
+    .tlw-header-flow {
+        height: var(--flow-header-height);
+
+        .tlw-header-btn {
+            height: var(--flow-header-top-height);
+            display: flex;
+            background: $themeColor;
+            box-shadow: 0 .125rem .25rem 0 #a2a3a4;
+
+            .flow-btn-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 2rem;
+                padding: 0 .375rem;
+                cursor: pointer;
+
+                &:hover {
+                    background: $themeBg-hover;
+                }
+
+                .tlw-svgIcon {
+
+                    //图标大小
+                    svg {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+
+                    //字体大小
+                    .icon-title {
+                        font-size: var(--font-size);
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            //退回按钮
+            .btnWithdrew {
+
+                //图标大小
+                svg {
+                    margin-top: .375rem;
+                    width: 2rem !important;
+                    height: 2rem !important;
+                }
+            }
+
+            //撤回按钮
+            .btnWithdrawx {
+
+                //图标大小
+                svg {
+                    margin-top: .5rem;
+                    width: 1.8rem !important;
+                    height: 1.8rem !important;
+                }
+            }
+
+            //关闭按钮
+            .btnClose {
+                position: absolute;
+                right: 1.25rem;
+                height: var(--flow-header-top-height);
+            }
+        }
+
+        .tlw-steps {
+            .tlw-svgIcon {
+
+                //字体大小
+                .icon-title {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+
+    }
+
+    .tlw-header-flow-ly {
+        height: var(--flow-header-top-height);
+    }
+
+    /*--------------------------------主页el-main区域-------------------------------------------*/
+    .tlw-main {
+        overflow: hidden;
+
+        /*--------------------------------主页el-main-left区域----------------------*/
+        .tlw-main-left {
+            width: 16rem;
+
+            .el-menu {
+                background: $themeColor-bg;
+                border: none;
+                font-size: .875rem;
+
+                .menuTitle {
+                    display: flex;
+                    align-items: center;
+                    height: 2.375rem;
+                    color: $themeColor;
+                    font-weight: bold;
+                    padding-left: 1.25rem;
+                    border-bottom: .0625rem solid #EEEEEE;
+                    font-size: var(--menuFontSize);
+                }
+
+                .el-sub-menu {
+                    .el-sub-menu__title {
+                        padding-left: 1.25rem !important;
+                        height: 2.25rem;
+                        color: $themeColor;
+                    }
+
+                    .el-menu-item {
+                        padding-left: 2.5rem !important;
+                    }
+                }
+
+
+                .el-menu-item {
+                    height: 2.25rem;
+                    color: $themeColor;
+                    margin-top: .0625rem;
+                    padding-left: 1.25rem !important;
+
+                    &:hover {
+                        background: $themeColor;
+                        color: #FFFFFF;
+
+                    }
+
+                    &.is-active {
+                        background: $themeColor;
+                        color: #FFFFFF;
+                    }
+
+
+                    .tlw-svgIcon {
+
+                        //图标大小
+                        svg {
+                            width: 1rem;
+                            height: 1rem;
+                        }
+
+                        //字体大小
+                        .icon-title {
+                            line-height: 2.25rem;
+                            font-size: var(--menuSmallFontSize);
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        /*--------------------------------主页el-main-right区域----------------------*/
+        .tlw-main-right {
+            font-size: .875rem;
+
+            /*----------------导航条-----------------*/
+            .tlw_bar {
+                background: $barColor;
+                padding: .3125rem 1.25rem;
+            }
+
+            /*----------------页面大标题-----------------*/
+            .tlw-title {
+                text-align: center;
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+
+            //*----------------页面大标题-----------------*/
+            .table-title-row {
+                margin: 1.25rem auto;
+
+                .table-title-col {
+                    text-align: center;
+                    font-family: SimSun;
+                    font-weight: bold;
+                    color: #555555;
+                    font-size: 1.25rem;
+                }
+            }
+
+            /*----------------拟办-----------------*/
+            .tlw-niban {
+                .niban-row {
+                    margin-top: 1.25rem;
+                    display: flex;
+                    flex-direction: row;
+
+                    .niban-col {
+                        width: 20%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                .icon-bg-true {
+                    background: rgba($themeColor, .2);
+
+                    svg {
+                        width: 4rem;
+                        height: 4rem;
+                    }
+
+                    .icon-title {
+                        font-size: var(--fontSize);
+                    }
+                }
+            }
+
+            .ly-niban {
+
+                // width: 100vw;
+                .el-col {
+                    margin-top: 2.5rem;
+                    margin-left: 2.5rem;
+                    width: 1.25rem !important;
+
+                    .el-card__header {
+                        background: #a0cfff;
+                        color: #000000;
+                        justify-content: center;
+                        font-weight: bold;
+                    }
+
+                    .el-card__body {
+                        // background: #ecf5ff;
+                        cursor: pointer;
+
+                        .tlw-svgIcon {
+                            display: flex;
+                            justify-content: center;
+
+                            .icon-bg-true {
+                                background: rgba($themeColor, .2);
+
+                                svg {
+                                    width: 5rem;
+                                    height: 5rem;
+                                }
+
+                                .icon-title {
+                                    font-size: var(--fontSize);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*----------------审批意见单-----------------*/
+            .spyj {
+
+                //输入框禁用颜色
+                .el-input.is-disabled .el-input__inner,
+                .el-textarea.is-disabled .el-textarea__inner {
+                    background-color: $themeColor-table;
+                    color: #000;
+                    cursor: default;
+                }
+            }
+
+            .spyj-image {
+
+                .spyj-image-containter {
+                    display: flex;
+
+                    .spyj-image-box {
+                        flex: 1;
+                    }
+                }
+            }
+
+        }
+    }
+
+    /*-------------------------------预警监测-主页el-main区域-------------------------------------------*/
+    .tlw-main-yjjc {
+        .tlw-main-left {
+            padding-right: .625rem;
+        }
+
+        .tlw-main-right {
+            width: 20vw !important;
+            padding-left: .625rem;
+
+            .tlw-main-card {
+                height: 97.8%;
+
+                .el-card__header {
+                    background: #FFFFFF;
+                    border-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    .el-menu {
+                        width: 100%;
+                        padding-left: 0;
+                        padding-right: 0;
+                        background-color: var(--el-fill-color-light);
+                        border-bottom: 0;
+
+                        &:nth-child(1) {
+                            border-left: 0 !important;
+                        }
+
+                        .el-menu-item {
+                            width: 10%;
+
+                            svg {
+                                use {
+                                    fill: $themeColor !important;
+                                }
+                            }
+
+                            &:hover {
+                                background: #FFFFFF;
+                            }
+
+                            &:first-child {
+                                border-left: 0 !important;
+                            }
+                        }
+
+                        .is-active {
+                            border-left: 1px solid var(--el-menu-border-color) !important;
+                            border-right: 1px solid var(--el-menu-border-color) !important;
+                            border-bottom: 0 !important;
+                            background: #FFFFFF;
+
+                            .icon-title {
+                                color: #F49244;
+                            }
+                        }
+                    }
+                }
+
+                .tlw-jbxx {
+                    height: calc(100vh - 170px);
+                    overflow-y: auto;
+
+                    .el-col {
+                        padding-left: .625rem;
+                        padding-right: .625rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //地块详情
+    .plot-detail-containter {
+        height: calc(100vh - 100px) !important;
+
+        .tlw-main-left {
+            border: 1px solid #ecf5ff;
+        }
+
+        .tlw-main-right {
+            width: 10vw !important;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            .el-tabs {
+                height: 99.8%;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="保存" class="cls-1" d="M8,8H23.75L32,16V33H8V8Zm3,3H22v5H11V11Zm0,9H29V31H11V20Zm13.422,2.531a2.453,2.453,0,1,1-2.484,2.453A2.469,2.469,0,0,1,24.422,22.531Z" transform="translate(0 -0.5)"/>
+</svg>
+
+
